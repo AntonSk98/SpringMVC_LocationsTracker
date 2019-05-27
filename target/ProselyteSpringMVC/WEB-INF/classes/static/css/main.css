@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#map {
+    margin-top: -20px;
+    height: 850px;
+}
+.info, #label{
+    margin-left: 20px;
+    font-style: italic;
+}
+#label{
+    margin-top: 15px;
+}
+.selectedDevice {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+.usualDevice{
+    margin-top: 10px;
+    border: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-style: italic;
+
+}
+.image{
+    margin-top: 352px;
+    margin-left: 150px;
+    position: absolute;
+    z-index: -1;
+}
+#img{
+    width: 90%;
+    height: 100%;
+}
+#input{
+    margin-top: 10px;
+    width: 200px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
+#lowHR{
+    margin-top: 0px;
+}

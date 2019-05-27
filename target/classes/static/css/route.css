@@ -1,0 +1,25 @@
+li{
+    list-style: none;
+    display: inline-block;
+}
+a {
+    margin-top: 15px;
+    background-color: red;
+    box-shadow: 0 5px 0 darkred;
+    color: white;
+    position: absolute;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li:nth-child(2) {
+    margin-left: 200px;
+}
+a:hover {
+    background-color: #ce0606;
+}
+
+a:active {
+    box-shadow: none;
+    top: 5px;
+}

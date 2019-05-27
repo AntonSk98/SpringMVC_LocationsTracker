@@ -1,0 +1,3 @@
+In order to show default point the controller from server part sends locations and default key it is important to put label with the name of device
+on default locations.
+Has changed the folder structure of the client side.

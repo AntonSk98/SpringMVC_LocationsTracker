@@ -1,0 +1,45 @@
+<body ng-app="app" ng-controller="getDataController">
+<div class="row">
+    <div class="col-md-4 col-md-offset-8">
+        <div class="greeting">
+            <h1>Hello! You authorized as: {{user.login}}</h1>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <hr style="border: none; height: 5px; color: black; background: black">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="image"><img id="img" src="/static/image/man.png" alt=""></div>
+        <div class="info">
+            <h1>User info:</h1>
+            <h2>Name: {{user.name}}</h2>
+            <h2>Surname: {{user.surname}}</h2>
+            <h2>Age: {{user.age}}</h2>
+        </div>
+        <div ng-repeat="key in user.keys" ng-class="lastSelectedKey == key ? 'selectedDevice' : 'usualDevice'")>
+            <button ng-click="onClickUserKey(key)" id="device">Device :{{key}} </button>
+            <span ng-if="keyActive[key].active">locations are sent</span>
+            <span ng-if="!keyActive[key].active && keyActive[key]">last seen {{keyActive[key].passedTime | date : "HH:mm:ss" : "UTC"}} seconds ago</span>
+            <span ng-if="!keyActive[key].active && !keyActive[key]">was not online for ages ago</span>
+        </div>
+        <div class="maxPoints">
+            <label id="label">
+                Enter the maximum locations to show:<br>
+                <input id="input" type="text" ng-change="onChangeMaxLocationsCount(maxLocationCount);" ng-model="maxLocationCount" placeholder="Enter the number here" required>
+            </label>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="map"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <hr id="lowHR" style="border: none; height: 5px; color: black; background: black">
+    </div>
+</div>
+</body>

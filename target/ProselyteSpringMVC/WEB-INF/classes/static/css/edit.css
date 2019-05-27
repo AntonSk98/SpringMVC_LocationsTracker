@@ -1,0 +1,22 @@
+input{
+    margin-top: 10px;
+    width: 200px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
+form{
+    font-weight: 900;
+
+}
+button{
+    font-weight: 400;
+}
+#editIcon{
+    margin-top: -200px;
+    float: right;
+    height: 300px;
+    width: 300px;
+}

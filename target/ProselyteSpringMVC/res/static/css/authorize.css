@@ -1,0 +1,73 @@
+body{
+    background: url("/static/image/mainPicturebackground.jpg" );
+    background-size: 100%;
+    filter: alpha(Opacity=70);
+}
+.image{
+    margin-top: -20%;
+    margin-right: 15%;
+    float: right;
+}
+#nameLogo{
+    margin-top: -10%;
+    letter-spacing: 10px;
+    font-size: 36px;
+}
+#image{
+    margin-top: 10px;
+    margin-left: 6%;
+    width: 200px;
+    height: 200px;
+}
+.welcome {
+    width: 28%;
+    padding-top: 20px;
+    margin-top: 10%;
+    padding-bottom: 20px;
+    border-radius: 45% ;
+    text-align: center;
+    transform: rotate(-10deg);
+    color: deepskyblue;
+    font-weight: bold;
+}
+.login{
+    width: 25%;
+    padding-top: 25px;
+    margin-top: 5%;
+    padding-bottom: 55px;
+    border-radius: 45% ;
+}
+#enter{
+    text-align: center;
+    color: black;
+}
+#user, #password{
+   padding-left: 50px;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+#inputUser, #inputPassword{
+    width: 300px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
+#submit{
+    margin-top: 15px;
+    position: absolute;
+    left: 10%;
+    padding: 8px 15px 8px 15px;
+    font-size: 20px;
+    font-style: italic;
+    background: white;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+#submit:hover{
+    background: deepskyblue;
+    color: white;
+    transition: 0.5s;
+}
